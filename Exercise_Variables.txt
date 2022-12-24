@@ -4,3 +4,5 @@ firstName = 'Mario'
 age = 25 
 # Exercise Variables_3 Create a sentence variable and assign the value Hello, I'm Mario! to it without using double quotes 
 sentence = f'Hello, I'm {firstName}!' 
+# Exercise Variables_4 Create an amount variable and assign a float value to it. 
+amounth = 3.141 
