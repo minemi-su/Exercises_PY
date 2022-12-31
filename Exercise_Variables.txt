@@ -11,6 +11,9 @@ bool_1=True
 bool_2=True 
 bool_3=True 
 set={bool_1,bool_2,bool_3} 
+#can assign in one line also
+bool_1=bool_2=bool_3=True
+set={bool_1,bool_2,bool_3} 
 # Exercise Variables_6 Remove the illegal characters in the variable 1my-first2_Name = 'Mario' 
 # I couldn't find a method for removing illegal characters, so I just type the correct version. 
 my_first2_Name = 'Mario' 
