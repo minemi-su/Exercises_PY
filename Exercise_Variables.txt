@@ -23,5 +23,13 @@ message = 'did I write "this" or someone else did?'
 var1,var2,var3 = (0,"or",1)
 # if I use echo but not assign a file to the line this will print them 
 echo  var1,var2,var3 = (0,"or",1) 
+# or I can type the txt file in command window
+type  Exercise_Variables.txt
 # in the python this will be print command 
 print (var1,var2,var3) 
+# Exercise Variables_9 Swap the value of the variables
+# I will change the previous variables values, var_1 and var_3
+var_4=var_3
+var_3=var_1
+var_1=var_4
+print(var_1,var_2,var_3)
