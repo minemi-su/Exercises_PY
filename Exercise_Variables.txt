@@ -6,3 +6,19 @@ age = 25
 sentence = f'Hello, I'm {firstName}!' 
 # Exercise Variables_4 Create an amount variable and assign a float value to it. 
 amounth = 3.141 
+# Exercise Variables_5 Create a set of 3 variables and assign True as value of each one.
+bool_1=True 
+bool_2=True 
+bool_3=True 
+set={bool_1,bool_2,bool_3} 
+# Exercise Variables_6 Remove the illegal characters in the variable 1my-first2_Name = 'Mario' 
+# I couldn't find a method for removing illegal characters, so I just type the correct version. 
+my_first2_Name = 'Mario' 
+# Exercise Variables_7 Write single quotes or double quotes correctly 
+message = 'did I write "this" or someone else did?' 
+# Exercise Variables_8 Create 3 different variables and assign 3 different values. Write only one operation. Print them on terminal 
+var1,var2,var3 = (0,"or",1)
+# if I use echo but not assign a file to the line this will print them 
+echo  var1,var2,var3 = (0,"or",1) 
+# in the python this will be print command 
+print (var1,var2,var3) 
