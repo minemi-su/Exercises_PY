@@ -33,3 +33,28 @@ var_4=var_3
 var_3=var_1
 var_1=var_4
 print(var_1,var_2,var_3)
+# Exercise Variables_10 Print the length of each variable. 
+len_of_each_var = {'firstName':len(firstName), 'sentence':len(sentence),'message':len(message),'var2':len(var2)} 
+print('lenght of each variable = ',len_of_each_var) 
+# Exercise Variables_11 Modify the variables as suggested 
+## a = 'hello' #capitalize 
+a = 'hello' 
+A = a.capitalize() 
+## b = 'tom' #uppercase 
+b = 'tom' 
+B = b.upper() 
+## c = 'LAURA' #lowercase 
+c = 'LAURA' 
+C = c.lower()
+## question = 'How are you' #change o in e 
+question = 'How are you' 
+new_question = question.replace('o','e') 
+## age_question = 'How old are you?' #use the correct method to create a string for each word 
+age_question = 'How old are you?' 
+age_question_divided = age_question.split() 
+print(a, b, c, question, age_question) 
+print(A, B, C, new_question, age_question_divided) # Exercise Variables_12 Create two variables called name and age. Then create a variable called hello and print the name and the age. Use the formatted string literal. 
+name = 'Su' 
+age = 31 
+hello = f'Hello dear, my name is {name}, I am {age} years old' 
+print(hello) 
