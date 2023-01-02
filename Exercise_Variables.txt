@@ -53,7 +53,8 @@ new_question = question.replace('o','e')
 age_question = 'How old are you?' 
 age_question_divided = age_question.split() 
 print(a, b, c, question, age_question) 
-print(A, B, C, new_question, age_question_divided) # Exercise Variables_12 Create two variables called name and age. Then create a variable called hello and print the name and the age. Use the formatted string literal. 
+print(A, B, C, new_question, age_question_divided) 
+# Exercise Variables_12 Create two variables called name and age. Then create a variable called hello and print the name and the age. Use the formatted string literal. 
 name = 'Su' 
 age = 31 
 hello = f'Hello dear, my name is {name}, I am {age} years old' 
