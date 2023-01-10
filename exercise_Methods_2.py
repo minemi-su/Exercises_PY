@@ -15,6 +15,6 @@ num5 = 1.5
 num5 = round(num5,2) # will not going to change anything
 num5 = round(num5)
 # print them all
- print("num1:",num1,", num2:",num2,", num3:",num3,", num4:",num4,", num5:",num5)
+print("num1:",num1,", num2:",num2,", num3:",num3,", num4:",num4,", num5:",num5)
  # print their types
 print("type of num1:",type(num1),", type of num2:",type(num2),", type of num3:",type(num3),", type of num4:",type(num4),", type of num5:",type(num5))
