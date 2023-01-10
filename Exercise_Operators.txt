@@ -1,1 +1,21 @@
 # 1- Exercise Operators - 1 Insert the appropriate logical operator in order to print False 
+print(False and True) # Should print False
+# 2- Exercise Operators - 2 Change the logical operators in order to print True 
+print((False and (0 != 0)) or True) # Should print True
+# 3- Exercise Operators - 3 Print the rest of the 5/2 division 
+5%2 
+# that should print the result, but I will use print too, just in case  
+rest = 5%2 
+print(rest)  
+# 4- Exercise Operators - 4 Insert the appropriate logical operator in order to print True. 
+print(not ("testing" == "testing" and "Mario" == "Cool Guy")) 
+# 5- Exercise Operators - 5 Initialize and print the sentence variable using the appropriate operators. 
+firstName = "Mario"
+lastName = "Rossi"
+sentence = f"{firstName} {lastName}"
+print('"',sentence,'"') # I can't manage to print without blanks, does this count?
+#6- Exercise Operators - 6 Check if "Nike" is in brands array using the appropriate logical operator 
+brands = ["Adidas", "Nike"] 
+print("Nike" in brands) 
+#7- Exercise Operators - 7 Check if "Reebok" is not in brands array using the appropriate logical operator 
+print("Reebok" not in brands) # result is True, apparently it is not 
