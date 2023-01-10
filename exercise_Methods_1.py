@@ -8,4 +8,4 @@ print(type(4j))
 print(type(["lion", "monkey", "dog","fish"]))
 print(type(("lion", "monkey", "dog","fish")))
 print(type({"name" : "John", "surname" : "Doe", "age":22}))
-print(type({"lion", "monkey", "dog","fish"}))
+print(type({"lion", "monkey", "dog","fish"})) # this time I used python file, I hope this will be OK 
