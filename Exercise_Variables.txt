@@ -3,7 +3,8 @@ firstName = 'Mario'
 # Exercise Variables_2 Create an age variable and assign the value 25 to it. 
 age = 25 
 # Exercise Variables_3 Create a sentence variable and assign the value Hello, I'm Mario! to it without using double quotes 
-sentence = f'Hello, I'm {firstName}!' 
+sentence =('Hello, I\'m {}!'.format(firstName))
+print(sentence)
 # Exercise Variables_4 Create an amount variable and assign a float value to it. 
 amounth = 3.141 
 # Exercise Variables_5 Create a set of 3 variables and assign True as value of each one.
