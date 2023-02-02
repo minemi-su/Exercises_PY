@@ -88,9 +88,19 @@ print(user)
 
 
 ## Exercise 4 - Functions
-residency_names=["John"]
-residency_surnames=["Doe"]
 
+# I didn't understand the question so I did two solutions, 
+# This one will greet all of the members
+residency_names=["John","Tristram","Baldwin","Wally"]
+residency_surnames=["Doe","Mcbride","Preston","Collins"]
+
+def residency_greeting():
+    for i in range(len(residency_names)):
+        print(f'Hello {residency_names[i]} {residency_surnames[i]} !')
+
+residency_greeting()
+
+# this will add a new member and greet Both John Doe and the typed name,
 def residency_add(name, surname):
     print(f'Hello {residency_names[0]} {residency_surnames[0]}!')
     for i in range(len(residency_names)):
@@ -138,11 +148,9 @@ Fibonacci(5)
 ## we worked together with Daniel on Fuctions 4-5-6
 
 ## Exercise 7 - Functions
-
 my_list= [*range(5)] 
 new_list=[]
-second_power= lambda x : x**2 if x**2%2==0 else None:
-print(new_list)
+second_power= lambda x : x**2 if x**2%2==0 else None
 
 for i in my_list:
     if type(second_power(i))==int:
