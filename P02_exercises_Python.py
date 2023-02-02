@@ -87,3 +87,64 @@ user=os.getlogin()
 print(user)
 
 
+## Exercise 4 - Functions
+residency_names=["John"]
+residency_surnames=["Doe"]
+
+def residency_add(name, surname):
+    print(f'Hello {residency_names[0]} {residency_surnames[0]}!')
+    for i in range(len(residency_names)):
+        if name in residency_names[i]:
+            if surname in residency_surnames[i]:
+                print(f'Hello {name} {surname}!')
+    else:
+        residency_names.append(name)
+        residency_surnames.append(surname)
+        print(f'Hello {name} {surname}!')
+
+new_entry=str(input('enter a name and a surname :'))
+new_list=new_entry.split()
+x=new_list[0].lower().capitalize()
+y=new_list[1].lower().capitalize()
+residency_add(x,y)
+
+## Exercise 5 - Functions
+
+n=15
+def random_list_summer(n):
+    random_list_summer=[]
+    import random
+    for i in range(n):
+        rand_numb=random.randint(-100,101)
+        random_list_summer.append(rand_numb)
+    print(random_list_summer)
+   
+random_list_summer(n)
+
+
+## Exercise 6 - Functions
+def Fibonacci(n):
+    n1=0
+    n2=1
+    sequance=[n1,n2]
+    for i in range(0,n):
+        new_number=n1+n2
+        n1=n2
+        n2=new_number
+        sequance.append(new_number)
+    print(sequance)    
+Fibonacci(5)
+
+## we worked together with Daniel on Fuctions 4-5-6
+
+## Exercise 7 - Functions
+
+my_list= [*range(5)] 
+new_list=[]
+second_power= lambda x : x**2 if x**2%2==0 else None:
+print(new_list)
+
+for i in my_list:
+    if type(second_power(i))==int:
+        new_list.append(second_power(i))
+print(new_list)
