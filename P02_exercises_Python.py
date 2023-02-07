@@ -156,3 +156,65 @@ for i in my_list:
     if type(second_power(i))==int:
         new_list.append(second_power(i))
 print(new_list)
+
+## Exercise 1 & 2 - Classes and Object
+class Animal:
+    def __init__(self,leg_count):
+        self.leg_count=leg_count
+        print("Animal object was created")
+    def runs(self):
+        print('Running started')
+    def count_the_legs(self):
+        print(f'leg count is : {self.leg_count}')
+    def return_the_legs(self):
+        return self.leg_count
+    
+a= Animal(4)
+a.count_the_legs()
+a.return_the_legs()
+a.leg_count
+a.runs()
+
+## Exercise 3 - Classes and Object
+class Animal:
+    def __init__(self,leg_count):
+        self.__leg_count=leg_count
+        print("Animal object was created")
+    def runs(self):
+        print('Running started')
+    def count_the_legs(self):
+        print(f'leg count is : {self.__leg_count}')
+    def return_the_legs(self):
+        return self.__leg_count
+    
+a= Animal(4)
+a.count_the_legs()
+a.return_the_legs()
+
+## Exercise 4 - Classes and Object
+
+class Animal:
+    def __init__(self,legs_count):
+        print("Animal object was created")
+        self._number_of_legs = legs_count
+
+    def runs(self):
+        print("Running started")
+
+    def count_legs(self):
+        print(f"It has {self._number_of_legs}")
+
+    def return_legs(self):
+        return self._number_of_legs
+    
+    def bark(self):
+        print("woof woof")
+        
+animal1= Animal(4)
+animal1.count_legs()
+setattr(animal1,"name","max")
+print(animal1.return_legs())
+print(animal1._number_of_legs)
+
+print(animal1.name)
+animal1.bark()
