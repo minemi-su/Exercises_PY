@@ -12,25 +12,20 @@ default_dag_args = {
 
 with DAG(dag_id="DAG_Exercise_01", 
          schedule_interval = None, 
-         default_args = default_dag_args
+         default_args = default_dag_args,
          catchup=False
 ) as dag:
-
-        # here at this level we define our tasks of the DAG
-        task_3 = BashOperator(
-                task_id = 'bash_task_folder'
-                bash_command="cd /Users/user/Desktop")
         task_0 = BashOperator(
-                task_id = 'bash_task', 
-                bash_command = "echo 'command executed from Bash Operator' >> result.txt")
+                        task_id = 'bash_task_create', 
+                        bash_command = r"echo command executed from Bash Operator >> C:\Users\user\result.txt")
 
         task_1 = BashOperator(
-                task_id = 'bash_task_move_data', 
-                bash_command = "copy /Users/user/Desktop/result.txt  /Users/user/Desktop/learn/develhope/DAG")
+                        task_id = 'bash_task_move_data', 
+                        bash_command = r"copy C:\Users\user\result.txt  C:\Users\user\Desktop\learn\develhope\DAG")
 
         task_2 = BashOperator(
-                task_id = 'bash_task_remove_data', 
-                bash_command = "delete /Users/user/Desktop/result.txt")
+                        task_id = 'bash_task_remove_data', 
+                        bash_command = r"del C:\Users\user\result.txt")
 
 
-task_3 >> task_0 >> task_1 >> task_2
+task_0>>task_1 >> task_2
